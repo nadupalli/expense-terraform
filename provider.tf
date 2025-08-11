@@ -7,10 +7,10 @@ terraform {
   }
 
   backend "s3" {
-    bucket         = "raj-remote-state"
+    bucket         = "lab-remotestate"
     key            = "expense"
     region         = "us-east-1"
-    dynamodb_table = "raj-locking"
+    dynamodb_table = "lab-locking"
   }
 }
 
